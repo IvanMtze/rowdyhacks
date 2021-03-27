@@ -21,6 +21,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Hello")),
       drawer: HomeDrawer(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
