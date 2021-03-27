@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "451625157535",
+    "project_id": "rowdyhacks-2c170",
+    "storage_bucket": "rowdyhacks-2c170.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451625157535:android:66cef8b0c977d5cf7b73aa",
+        "android_client_info": {
+          "package_name": "com.rowdyhacks.rowdy_hacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451625157535-hpjra8jg0ss81a1hpecq2u0v48ancaaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rowdyhacks.rowdy_hacks",
+            "certificate_hash": "fe38689812e62f686533db8b2a184f2cb9eb9f1c"
+          }
+        },
+        {
+          "client_id": "451625157535-3j1se4hfiv8pjva72imeafsj4ur5d9u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNpB-4KkcN1J3cEg-9izz72nRi67KFGRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451625157535-3j1se4hfiv8pjva72imeafsj4ur5d9u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
