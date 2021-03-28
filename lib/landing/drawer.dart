@@ -31,7 +31,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
           ),
           ListTile(
               leading: Icon(Icons.add_business),
-              title: Text('add Restaurant'),
+              title: Text('Add Place'),
               onTap: () => {Navigator.pushNamed(context, '/addRestaurant')}),
           ListTile(
             leading: Icon(Icons.logout),

@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:loading/indicator/ball_pulse_indicator.dart';
 import 'package:loading/loading.dart';
+import 'package:rowdy_hacks/landing/image_page.dart';
 import 'package:rowdy_hacks/landing/register_restaurant.dart';
 import 'package:rowdy_hacks/login/AuthService.dart';
 import 'package:rowdy_hacks/login/login.dart';
@@ -15,13 +16,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
   final navigatorKey = GlobalKey<NavigatorState>();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      navigatorKey:navigatorKey,
+      navigatorKey: navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -32,8 +32,9 @@ class MyApp extends StatelessWidget {
         '/': (context) => MyHomePage(),
         '/home': (context) => Home(),
         '/login': (context) => Login(),
-        '/signup': (context)=>Signup(),
-        '/addRestaurant':(context)=>RegisterRestaurant()
+        '/signup': (context) => Signup(),
+        '/addRestaurant': (context) => RegisterRestaurant(),
+        '/imageview': (context) => ImagePage(),
       },
     );
   }
@@ -86,13 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
 
-
-
     if (!_initialized) {
       return loading;
     }
-    return Scaffold(
-        body:AuthService().handleAuth()
-    );
+    return Scaffold(body: AuthService().handleAuth());
   }
 }

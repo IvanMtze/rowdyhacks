@@ -23,12 +23,14 @@ class AuthService {
   Future<UserCredential> sign_in_with_gmail() async {
     _signin_with_gmail();
   }
+
   Future<UserCredential> _signin_with_gmail() async {
     // Trigger the authentication flow
     final GoogleSignInAccount googleUser = await GoogleSignIn().signIn();
 
     // Obtain the auth details from the request
-    final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+    final GoogleSignInAuthentication googleAuth =
+        await googleUser.authentication;
 
     // Create a new credential
     final GoogleAuthCredential credential = GoogleAuthProvider.credential(
@@ -57,8 +59,7 @@ class AuthService {
     }
   }
 
-  Future<bool> signup_with_email(
-      _email, _passwd, BuildContext _context) async {
+  Future<bool> signup_with_email(_email, _passwd, BuildContext _context) async {
     try {
       UserCredential userCredential = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(email: _email, password: _passwd);

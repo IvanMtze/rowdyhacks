@@ -17,6 +17,8 @@ dependencies:
   google_sign_in:
   qrscan:
 
+  image_picker:
+  firebase_storage: ^8.0.1
 
   loading: ^1.0.2
   permission_handler: ^6.1.1
@@ -26,6 +28,8 @@ dependencies:
   cupertino_icons: ^1.0.0
   country_code_picker: ^1.7.0
   beacons_plugin: ^1.0.20
+  geolocator: ^7.0.1
+  percent_indicator: ^3.0.1
 
 
 dev_dependencies:

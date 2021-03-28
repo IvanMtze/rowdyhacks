@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 class PlaceCard extends StatelessWidget {
-
-
   final String _title;
   final String _subtitle;
+  final String _id;
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -12,7 +11,7 @@ class PlaceCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           ListTile(
-            leading: Icon(Icons.album),
+            leading: Icon(Icons.place),
             title: Text(_title),
             subtitle: Text(_subtitle),
           ),
@@ -20,8 +19,8 @@ class PlaceCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               TextButton(
-                child: const Text('Delete from my history'),
-                onPressed: () {/* ... */},
+                child: const Text("I'm here"),
+                onPressed: () {},
               ),
             ],
           ),
@@ -29,5 +28,6 @@ class PlaceCard extends StatelessWidget {
       ),
     );
   }
-  PlaceCard(this._title, this._subtitle);
+
+  PlaceCard(this._title, this._subtitle, this._id);
 }
