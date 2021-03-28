@@ -10,10 +10,9 @@ class HomeDrawer extends StatefulWidget {
 }
 
 class _HomeDrawerState extends State<HomeDrawer> {
-
   @override
   Widget build(BuildContext context) {
-print("drawer");
+    print("drawer");
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
@@ -31,6 +30,10 @@ print("drawer");
             ),
           ),
           ListTile(
+              leading: Icon(Icons.add_business),
+              title: Text('add Restaurant'),
+              onTap: () => {Navigator.pushNamed(context, '/addRestaurant')}),
+          ListTile(
             leading: Icon(Icons.logout),
             title: Text('Logout'),
             onTap: () => {FirebaseAuth.instance.signOut()},
@@ -40,7 +43,7 @@ print("drawer");
     );
   }
 
-  logout(){
+  logout() {
     FirebaseAuth.instance.signOut();
   }
 }

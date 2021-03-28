@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rowdy_hacks/landing/drawer.dart';
+import 'package:rowdy_hacks/landing/places.dart';
+import 'package:rowdy_hacks/landing/safety.dart';
 
 class Home extends StatefulWidget {
   Home({Key key}) : super(key: key);
@@ -16,13 +18,15 @@ class _HomeState extends State<Home> {
   }
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
-
+    Safety(),
+    Places()
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Hello")),
       drawer: HomeDrawer(),
+      body: _widgetOptions[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -30,7 +34,7 @@ class _HomeState extends State<Home> {
             label: 'Home',
             backgroundColor: Colors.red,
           ),
-          BottomNavigationBarItem(
+    BottomNavigationBarItem(
             icon: Icon(Icons.location_city),
             label: 'Places',
             backgroundColor: Colors.pink,
@@ -40,6 +44,7 @@ class _HomeState extends State<Home> {
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
       ),
+
     );
   }
 }

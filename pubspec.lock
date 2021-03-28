@@ -8,6 +8,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.5.0"
+  beacons_plugin:
+    dependency: "direct main"
+    description:
+      name: beacons_plugin
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.20"
   boolean_selector:
     dependency: transitive
     description:
@@ -219,6 +226,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  permission_handler:
+    dependency: "direct main"
+    description:
+      name: permission_handler
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "6.1.1"
+  permission_handler_platform_interface:
+    dependency: transitive
+    description:
+      name: permission_handler_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.1"
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -226,6 +247,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  qrscan:
+    dependency: "direct main"
+    description:
+      name: qrscan
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.22"
   quiver:
     dependency: transitive
     description:
@@ -296,4 +324,4 @@ packages:
     version: "2.1.0"
 sdks:
   dart: ">=2.12.0 <3.0.0"
-  flutter: ">=1.20.0"
+  flutter: ">=1.22.0"

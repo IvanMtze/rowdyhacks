@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:loading/indicator/ball_pulse_indicator.dart';
 import 'package:loading/loading.dart';
+import 'package:rowdy_hacks/landing/register_restaurant.dart';
 import 'package:rowdy_hacks/login/AuthService.dart';
 import 'package:rowdy_hacks/login/login.dart';
 import 'package:rowdy_hacks/landing/home.dart';
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => MyHomePage(),
         '/home': (context) => Home(),
         '/login': (context) => Login(),
-        '/signup': (context)=>Signup()
+        '/signup': (context)=>Signup(),
+        '/addRestaurant':(context)=>RegisterRestaurant()
       },
     );
   }

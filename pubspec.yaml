@@ -15,12 +15,17 @@ dependencies:
   firebase_core:
   firebase_auth:
   google_sign_in:
+  qrscan:
+
 
   loading: ^1.0.2
+  permission_handler: ^6.1.1
+
   cloud_firestore:
 
   cupertino_icons: ^1.0.0
   country_code_picker: ^1.7.0
+  beacons_plugin: ^1.0.20
 
 
 dev_dependencies:
